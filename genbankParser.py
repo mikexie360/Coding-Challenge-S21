@@ -20,7 +20,7 @@ from Bio.SeqRecord import SeqRecord
 from Bio.SeqFeature import SeqFeature, FeatureLocation
 from Bio import SeqIO, GenBank
 
-# function definition of main
+# function definition of genbankParser
 # we will be using a top down approach
 # first parse the genbank file and then create an empty diagram
 # second, add an empty track, and then an empty feature set
