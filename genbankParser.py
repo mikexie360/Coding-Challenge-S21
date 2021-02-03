@@ -1,8 +1,8 @@
 #***********************************************************************
-# File: main.py
+# File: genbankParser.py
 # Author: Mike Xie
 # Procedures:
-# main 	- parse a genbank file and output a circular genome map in an image file
+# genbankParser 	- parse a genbank file and output a circular genome map in an image file
 #**********************************************************************
 
 import os
@@ -27,7 +27,7 @@ from Bio import SeqIO, GenBank
 # third, add all the features into the feature set
 # fourth, draw all the shapes
 # fifth, save all the drawings into different file formats
-def main():
+def genbankParser():
 	# parse the genbank file
 	record = SeqIO.read("Genome.gb", "genbank")
 
@@ -76,4 +76,4 @@ def main():
 	gd_diagram.write(record.description+".svg", "SVG")
 	gd_diagram.write(record.description+".png", "PNG")
 
-main()
+genbankParser()
